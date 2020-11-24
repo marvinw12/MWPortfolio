@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">My Projects</h1>
+        </div>
+      </div>
+
+    <div class="card-group">    
+      <div class="card">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title" th:text=${project.title}></h5>
+          <p class="card-text" th:text=${project.description}></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
